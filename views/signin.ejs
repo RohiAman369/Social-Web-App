@@ -1,0 +1,51 @@
+<link rel="stylesheet" href="/css/signin.css">
+
+<div class="sign-up__container">
+    <div class="form-div">
+        <div class="title">
+            Log In 
+        </div>
+        <form method="post" action="/api/v1/users/log-in">
+            <div class="inputWithIcon">
+                <input class="input-tag" type = "email" name="email" placeholder="Email" required>
+                <i class="far fa-envelope"></i>
+            </div>
+            <div class="inputWithIcon">
+                <input class="input-tag" type = "password" name="password" placeholder="Password" required>
+                <i class="fas fa-unlock"></i>
+            </div>
+            <button class="signUp-btn" type="submit">  Log In </button>
+        </form>
+        <div class="forgot">
+            <a href="/users/forgot-password"> Forgot Password ? </a>
+        </div>
+        <div class="signUp-text">
+            <hr class="border-line"></hr>
+            <div> Or - Sign In with </div>
+            <hr class="border-line"></hr>
+
+        </div>
+        <div class="icons">
+            <a href="/users/auth/google">
+                <div class="img-div">
+                    <img src="/images/SignUp/googlelogo.png" alt="google">
+                </div>
+            </a>
+            <a href="/users/auth/facebook">
+                <div class="img-div">
+                    <img src="/images/SignUp/fblogog.svg" alt="facebook">
+                </div>
+            </a>
+            <a href="/users/auth/github">
+                <div class="img-div">
+                    <img src="/images/SignUp/github logo.png" alt="github">
+                </div>
+            </a>
+        </div>
+
+        <div class="other-link">
+            Don't have a account? &nbsp;
+            <a href="/users/sign-up"> Create Account </a>
+        </div>
+    </div>
+</div>

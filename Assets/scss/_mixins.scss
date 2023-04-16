@@ -1,0 +1,5 @@
+@mixin flexcenter($diretion) {
+    display: flex;
+    flex-direction: $diretion;
+    
+}
